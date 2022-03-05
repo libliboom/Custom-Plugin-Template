@@ -4,7 +4,11 @@
     <name>Custom-Plugin-Template</name>
     <vendor>libliboom</vendor>
 
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.libliboom.customplugintemplate.services.MyApplicationService"/>
