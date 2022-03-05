@@ -15,6 +15,10 @@
         <projectService serviceImplementation="com.github.libliboom.customplugintemplate.services.MyProjectService"/>
     </extensions>
 
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider implementation="com.github.libliboom.customplugintemplate.WizardTemplateProviderImpl" />
+    </extensions>
+
     <applicationListeners>
         <listener class="com.github.libliboom.customplugintemplate.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
